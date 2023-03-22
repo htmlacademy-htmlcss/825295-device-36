@@ -69,61 +69,63 @@
           <div class="filter-container">
             <section class="filter">
               <h2 class="filter-heading">Фильтр:</h2>
-              <section class="cost">
-                <h3 class="cost-heading">Стоимость</h3>
-                <div class="range">
-                  <button class="range-button" type="button">
-                    <span class="button-description">от 0</span>
-                  </button>
-                  <button class="range-button" type="button">
-                    <span class="button-description">до 5000</span>
-                  </button>
-                </div>
-              </section>
-              <section class="color">
-                <h3 class="color-heading">Цвет</h3>
-                <ul class="color-list">
-                  <li class="color-item">
-                    <label class="color-label" for="black">Черный</label>
-                    <input class="color-checkbox" type="checkbox" name="black" id="black" checked>
-                    <span class="color-checkbox-new"></span>
-                  </li>
-                  <li class="color-item">
-                    <label class="color-label" for="white">Белый</label>
-                    <input class="color-checkbox" type="checkbox" name="white" id="white" checked>
-                    <span class="color-checkbox-new"></span>
-                  </li>
-                  <li class="color-item">
-                    <label class="color-label" for="blue">Синий</label>
-                    <input class="color-checkbox" type="checkbox" name="blue" id="blue">
-                    <span class="color-checkbox-new"></span>
-                  </li>
-                  <li class="color-item">
-                    <label class="color-label" for="red">Красный</label>
-                    <input class="color-checkbox" type="checkbox" name="red" id="red">
-                    <span class="color-checkbox-new"></span>
-                  </li>
-                  <li class="color-item">
-                    <label class="color-label" for="pink">Розовый</label>
-                    <input class="color-checkbox" type="checkbox" name="pink" id="pink">
-                    <span class="color-checkbox-new"></span>
-                  </li>
-                </ul>
-              </section>
-              <section class="bluetooth">
-                <h3 class="bluetooth-heading">Bluetooth</h3>
-                <ul class="bluetooth-list">
-                  <li class="bluetooth-item">
-                    <label class="bluetooth-label" for="there-is">Есть</label>
-                    <input class="bluetooth-radio" type="radio" name="bluetooth" id="there-is" checked>
-                  </li>
-                  <li class="bluetooth-item">
-                    <label class="bluetooth-label" for="there-isnt">Нет</label>
-                    <input class="bluetooth-radio" type="radio" name="bluetooth" id="there-isnt">
-                  </li>
-                </ul>
-              </section>
-              <button class="filter-button" type="button">Показать</button>
+              <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+                <section class="cost">
+                  <h3 class="cost-heading">Стоимость</h3>
+                  <div class="range">
+                    <button class="range-button" type="button">
+                      <span class="button-description">от 0</span>
+                    </button>
+                    <button class="range-button" type="button">
+                      <span class="button-description">до 5000</span>
+                    </button>
+                  </div>
+                </section>
+                <section class="color">
+                  <h3 class="color-heading">Цвет</h3>
+                  <ul class="color-list">
+                    <li class="color-item">
+                      <label class="color-label" for="black">Черный</label>
+                      <input class="color-checkbox" type="checkbox" name="black" id="black" checked>
+                      <span class="color-checkbox-new"></span>
+                    </li>
+                    <li class="color-item">
+                      <label class="color-label" for="white">Белый</label>
+                      <input class="color-checkbox" type="checkbox" name="white" id="white" checked>
+                      <span class="color-checkbox-new"></span>
+                    </li>
+                    <li class="color-item">
+                      <label class="color-label" for="blue">Синий</label>
+                      <input class="color-checkbox" type="checkbox" name="blue" id="blue">
+                      <span class="color-checkbox-new"></span>
+                    </li>
+                    <li class="color-item">
+                      <label class="color-label" for="red">Красный</label>
+                      <input class="color-checkbox" type="checkbox" name="red" id="red">
+                      <span class="color-checkbox-new"></span>
+                    </li>
+                    <li class="color-item">
+                      <label class="color-label" for="pink">Розовый</label>
+                      <input class="color-checkbox" type="checkbox" name="pink" id="pink">
+                      <span class="color-checkbox-new"></span>
+                    </li>
+                  </ul>
+                </section>
+                <section class="bluetooth">
+                  <h3 class="bluetooth-heading">Bluetooth</h3>
+                  <ul class="bluetooth-list">
+                    <li class="bluetooth-item">
+                      <label class="bluetooth-label" for="there-is">Есть</label>
+                      <input class="bluetooth-radio" type="radio" name="bluetooth" id="there-is" checked>
+                    </li>
+                    <li class="bluetooth-item">
+                      <label class="bluetooth-label" for="there-isnt">Нет</label>
+                      <input class="bluetooth-radio" type="radio" name="bluetooth" id="there-isnt">
+                    </li>
+                  </ul>
+                </section>
+                <button class="filter-button" type="submit">Показать</button>
+              </form>
             </section>
             <section class="sorting">
               <h2 class="sorting-heading">Сортировка:</h2>

@@ -141,9 +141,11 @@
           <h2 class="subscription-heading">Подпишитесь<br> на рассылку</h2>
           <p class="subscription-description">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
             распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
-          <input class="subscription-input" type="email" placeholder="Ваш e-mail">
-          <button class="subscription-button" type="submit">Подписаться</button>
-          <span class="subscription-cost">Это бесплатно</span>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="subscription-input" type="email" name="e-mail" placeholder="Ваш e-mail" required>
+            <button class="subscription-button" type="submit">Подписаться</button>
+            <span class="subscription-cost">Это бесплатно</span>
+          </form>
         </section>
       </main>
       <footer class="page-footer">
