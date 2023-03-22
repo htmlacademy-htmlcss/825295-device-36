@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Aleksandr  Ilyukhin](https://up.htmlacademy.ru/htmlcss/36/user/825295).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 

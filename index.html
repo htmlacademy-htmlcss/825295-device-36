@@ -1,12 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <div class="page-container">
+      <header class="page-header">
+        <h1 class="visually-hidden">Интернет-магазин Девайс.</h1>
+        <h2 class="visually-hidden">Навигация по сайту.</h2>
+        <nav class="navigation">
+          <img src="images/header/device-logo.svg" width="145" height="36" alt="Логотип Девайс.">
+          <ul class="user-list">
+            <li class="user-item">
+              <input class="navigation-input" type="search" placeholder="Поиск по сайту">
+              <button class="navigation-button" type="button">Найти</button>
+            </li>
+            <li class="user-item">
+              <a class="user-link" href="#">Войти</a>
+            </li>
+            <li class="user-item">
+              <a class="user-link" href="#">Сравнить</a>
+            </li>
+            <li class="user-item">
+              <span class="basket-count">2</span>
+              <a class="user-link" href="#">Корзина</a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <span class="navigation-goods">Каталог товаров</span>
+              <button class="goods-button" type="button"></button>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="index-main">
+        <article class="goods">
+          <h2 class="quadrocopter-heading">Порхает как бабочка,<br>жалит как пчела!</h2>
+          <img src="images/index/slider-1.jpg" widht="560" height="560" alt="Квадрокоптер.">
+          <p class="quadrocopter-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером,
+            замаскированным под стандартную камеру.</p>
+          <button class="quadrocopter-button" type="button">Подробнее</button>
+          <ul class="quadrocopter-parameters-list">
+            <li class="quadrocopter-parameters-item">
+              <span class="quadrocopter-range">800 м</span>
+              <p class="quadrocopter-range-description">Дальность полета</p>
+            </li>
+            <li class="quadrocopter-parameters-item">
+              <span class="quadrocopter-range">50 м</span>
+              <p class="quadrocopter-range-description">Радиус поражения</p>
+            </li>
+          </ul>
+          <ul class="goods-list">
+            <li>
+              <button class="goods-button" type="button">Виртуальная<br>реальность</button>
+            </li>
+            <li>
+              <button class="goods-button" type="button">Моноподы<br>для селфи</button>
+            </li>
+            <li>
+              <button class="goods-button" type="button">Экшн-камеры</button>
+            </li>
+            <li>
+              <button class="goods-button" type="button">Фитнес-браслеты</button>
+            </li>
+            <li>
+              <button class="goods-button" type="button">Умные часы</button>
+            </li>
+            <li>
+              <button class="goods-button" type="button">Квадрокоптеры</button>
+            </li>
+          </ul>
+        </article>
+        <section class="delivery">
+          <h2 class="delivery-heading">Доставка</h2>
+          <p class="delivery-description">Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно! Ведь<br>
+            мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <ul class="options-list">
+            <li class="options-item options-item-yellow">
+              Доставка
+            </li>
+            <li class="options-item">
+              Гарантия
+            </li>
+            <li class="options-item">
+              Кредит
+            </li>
+          </ul>
+          <p class="delivery-description-rare">Доставим редкий товар под заказ</p>
+          <button class="modal-window-button" type="button"></button>
+        </section>
+        <article class="about-device">
+          <div class="about-container">
+            <h2 class="about-heading">О нас</h2>
+            <p class="about-description">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом
+              из нас.</p>
+            <p class="about-description">Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными
+              компаниями:</p>
+            <ul class="transport-list">
+              <li class="transport-item">
+                Меловые линии
+              </li>
+              <li class="transport-item">
+                СДИК
+              </li>
+              <li class="transport-item">
+                ТоксБерри
+              </li>
+            </ul>
+            <button class="about-button" type="button">Подробнее о нас</button>
+          </div>
+          <div class="contacts-container">
+            <h2 class="contacts-heading">Контакты</h2>
+            <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить
+              работоспособность покупки.</p>
+            <h3 class="adress-heading">Интернет-магазин "Девайс"</h3>
+            <p class="adress-description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <h3 class="working-hours-heading">Время работы</h3>
+            <p class="working-hours-description">пн—пт: с 10:00 до 22:00</p>
+            <p class="working-hours-description">сб—вс: с 10:00 до 19:00</p>
+            <button class="working-hours-button" type="button">Напишите нам</button>
+          </div>
+        </article>
+        <section class="subscription">
+          <h2 class="subscription-heading">Подпишитесь<br> на рассылку</h2>
+          <p class="subscription-description">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
+            распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
+          <input class="subscription-input" type="email" placeholder="Ваш e-mail">
+          <button class="subscription-button" type="submit">Подписаться</button>
+          <span class="subscription-cost">Это бесплатно</span>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <h2 class="visually-hidden">Свяжитесь с нами.</h2>
+        <img src="images/footer/device-logo.svg" width="145" height="36" alt="Логотип Девайс.">
+        <p class="footer-adress">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
+        <ul class="footer-list">
+          <li class="footer-item">
+            Доставка
+          </li>
+          <li class="footer-item">
+            Гарантия
+          </li>
+          <li class="footer-item">
+            Контакты
+          </li>
+        </ul>
+        <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграмм.</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб.</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Твиттер.</span>
+            </a>
+          </li>
+          <li class="social-item social-item-logo">
+            <a class="social-link" href="https://htmlacademy.ru/">
+              <img src="images/footer/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Academy.">
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
+
 </html>
