@@ -22,13 +22,11 @@
             <input class="navigation-input" type="search" name="search" aria-label="Поиск по сайту."
               placeholder="Поиск по сайту" required>
           </label>
-          <div class="navigation-button-container">
-            <button class="navigation-button" type="submit">Найти</button>
-          </div>
+          <button class="navigation-button" type="submit">Найти</button>
         </form>
         <ul class="user-list">
           <li class="user-item user-item-enter">
-            <a class="user-link user-link-enter" href="#">Войти</a>
+            <a class="user-link user-link-enter" href="#">Коля Петухов</a>
           </li>
           <li class="user-item user-item-exit">
             <a class="user-link user-link-exit" href="#">Выйти</a>
@@ -43,43 +41,50 @@
         <div class="catalog-wrapper-header">
           <button class="goods-button-header" type="button">
             Каталог товаров
-            <svg class="goods-button-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+            <svg class="goods-button-icon goods-button-plus" width="50" height="51" viewBox="0 0 50 51" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <circle opacity=".3" cx="25" cy="25" r="24" stroke="#000" stroke-width="2" />
-              <g opacity=".3" clip-path="url(#a)">
-                <path d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000" />
+              <circle cx="25" cy="25.787" r="24" stroke="black" stroke-width="2" />
+              <g clip-path="url(#clip0_11316_202)">
+                <path d="M33 24.787H26V17.787H24V24.787H17V26.787H24V33.787H26V26.787H33V24.787Z" fill="black" />
               </g>
               <defs>
-                <clipPath id="a">
-                  <path transform="translate(17 17)" d="M0 0h16v16H0z" />
+                <clipPath id="clip0_11316_202">
+                  <rect width="16" height="16" fill="white" transform="translate(17 17.787)" />
                 </clipPath>
               </defs>
             </svg>
+            <svg class="goods-button-icon goods-button-minus" width="50" height="51" viewBox="0 0 50 51" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M49 25.787C49 39.0418 38.2548 49.787 25 49.787C11.7452 49.787 1 39.0418 1 25.787C1 12.5322 11.7452 1.78699 25 1.78699C38.2548 1.78699 49 12.5322 49 25.787Z"
+                stroke="black" stroke-width="2" />
+              <path d="M33 24.787H17V26.787H33V24.787Z" fill="black" />
+            </svg>
           </button>
-          <ul class="goods-button-list-header">
-            <li class="goods-button-item-header">
-              <a class="goods-button-link-header" href="#">Виртуальная реальность</a>
+          <ul class="goods-list-header">
+            <li class="goods-item-header">
+              <a class="goods-link-header goods-link-header-active" href="#">Виртуальная реальность</a>
             </li>
-            <li class="goods-button-item-header">
-              <a class="goods-button-link-header" href="catalog.html">Моноподы для селфи</a>
+            <li class="goods-item-header">
+              <a class="goods-link-header" href="catalog.html">Моноподы для селфи</a>
             </li>
-            <li class="goods-button-item-header">
-              <a class="goods-button-link-header" href="#">Экшн-камеры</a>
+            <li class="goods-item-header">
+              <a class="goods-link-header" href="#">Экшн-камеры</a>
             </li>
-            <li class="goods-button-item-header">
-              <a class="goods-button-link-header" href="#">Фитнес-браслеты</a>
+            <li class="goods-item-header">
+              <a class="goods-link-header" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="goods-button-item-header">
-              <a class="goods-button-link-header" href="#">Умные часы</a>
+            <li class="goods-item-header">
+              <a class="goods-link-header" href="#">Умные часы</a>
             </li>
-            <li class="goods-button-item-header">
-              <a class="goods-button-link-header" href="#">Квадрокоптеры</a>
+            <li class="goods-item-header">
+              <a class="goods-link-header" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
+            <a class="navigation-link navigation-link-active" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Гарантия</a>
@@ -113,21 +118,15 @@
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="cost">
                 <legend class="cost-heading">Стоимость</legend>
-                <div class="range">
-                  <div class="range-buttons-container">
-                    <div class="range-button-wrapper">
-                      <button class="range-button" type="button" aria-label="Изменить минимальную цену.">
-                      </button>
-                    </div>
-                    <div class="range-button-wrapper">
-                      <button class="range-button" type="button" aria-label="Изменить максимальную цену.">
-                      </button>
-                    </div>
-                  </div>
-                  <div class="range-inputs">
-                    <input class="range-input" type="text" name="cost-from" placeholder="от 0" aria-label="от 0">
-                    <input class="range-input" type="text" name="cost-to" placeholder="до 5000" aria-label="до 5000">
-                  </div>
+                <div class="range-buttons-container">
+                  <button class="range-button" type="button" aria-label="Изменить минимальную цену.">
+                  </button>
+                  <button class="range-button" type="button" aria-label="Изменить максимальную цену.">
+                  </button>
+                </div>
+                <div class="range-inputs">
+                  <input class="range-input" type="text" name="cost-from" placeholder="от 0" aria-label="от 0">
+                  <input class="range-input" type="text" name="cost-to" placeholder="до 5000" aria-label="до 5000">
                 </div>
               </fieldset>
               <fieldset class="color">
@@ -135,7 +134,7 @@
                 <ul class="color-list">
                   <li class="color-item">
                     <label class="color-label">
-                      <input class="color-checkbox" type="checkbox" name="color" value="black" checked>
+                      <input class="color-checkbox visually-hidden" type="checkbox" name="color" value="black" checked>
                       <span class="color-checkbox-new">
                       </span>
                       Черный
@@ -143,28 +142,28 @@
                   </li>
                   <li class="color-item">
                     <label class="color-label">
-                      <input class="color-checkbox" type="checkbox" name="color" value="white" checked>
+                      <input class="color-checkbox visually-hidden" type="checkbox" name="color" value="white" checked>
                       <span class="color-checkbox-new"></span>
                       Белый
                     </label>
                   </li>
                   <li class="color-item">
                     <label class="color-label">
-                      <input class="color-checkbox" type="checkbox" name="color" value="blue">
+                      <input class="color-checkbox visually-hidden" type="checkbox" name="color" value="blue">
                       <span class="color-checkbox-new"></span>
                       Синий
                     </label>
                   </li>
                   <li class="color-item">
                     <label class="color-label">
-                      <input class="color-checkbox" type="checkbox" name="color" value="red">
+                      <input class="color-checkbox visually-hidden" type="checkbox" name="color" value="red">
                       <span class="color-checkbox-new"></span>
                       Красный
                     </label>
                   </li>
                   <li class="color-item">
                     <label class="color-label">
-                      <input class="color-checkbox" type="checkbox" name="color" value="pink">
+                      <input class="color-checkbox visually-hidden" type="checkbox" name="color" value="pink">
                       <span class="color-checkbox-new"></span>
                       Розовый
                     </label>
@@ -176,21 +175,21 @@
                 <ul class="bluetooth-list">
                   <li class="bluetooth-item">
                     <label class="bluetooth-label">
-                      <input class="bluetooth-radio" type="radio" name="bluetooth" value="yes" checked>
+                      <input class="bluetooth-radio visually-hidden" type="radio" name="bluetooth" value="yes" checked>
                       <span class="bluetooth-radio-new"></span>
                       Есть
                     </label>
                   </li>
                   <li class="bluetooth-item">
                     <label class="bluetooth-label">
-                      <input class="bluetooth-radio" type="radio" name="bluetooth" value="no">
+                      <input class="bluetooth-radio visually-hidden" type="radio" name="bluetooth" value="no">
                       <span class="bluetooth-radio-new"></span>
                       Нет
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <button class="filter-button" type="submit">Показать</button>
+              <button class="filter-button button button-decorated" type="submit">Показать</button>
             </form>
           </section>
           <div class="cards-container">
@@ -267,10 +266,10 @@
                 <h2 class="visually-hidden">Перейти к странице.</h2>
                 <ul class="pagination-list">
                   <li class="pagination-item pagination-item-back">
-                    <a class="pagination-link pagination-link-back" href="#">Назад</a>
+                    <a class="pagination-link-direction" href="#">Назад</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">1</a>
+                    <a class="pagination-link pagination-link-current" href="#">1</a>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">2</a>
@@ -285,7 +284,7 @@
                     <a class="pagination-link" href="#">15</a>
                   </li>
                   <li class="pagination-item pagination-item-towards">
-                    <a class="pagination-link pagination-link-towards" href="#">Вперёд</a>
+                    <a class="pagination-link-direction pagination-link-direction-towards" href="#">Вперёд</a>
                   </li>
                 </ul>
               </section>
