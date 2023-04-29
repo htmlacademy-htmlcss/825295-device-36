@@ -15,8 +15,8 @@ servicesButtons.forEach((button, index) => {
 
 const sliderTabButtons = document.querySelectorAll('.slider-button');
 const slides = document.querySelectorAll('.slider-item');
-const buttonPrevious = document.querySelector('.slider-arrow-button-left');
-const buttonNext = document.querySelector('.slider-arrow-button-right');
+const buttonPrevious = document.querySelector('.arrow-button-previous');
+const buttonNext = document.querySelector('.arrow-button-next');
 let counter = 0;
 
 const clearClasses = () => {
@@ -31,4 +31,26 @@ sliderTabButtons.forEach((tab, index) => {
     slides[index].classList.add('slider-item-shown');
     tab.classList.add('slider-button-current');
   });
+});
+
+
+buttonPrevious.addEventListener('click', () => {
+  clearClasses();
+  counter = counter - 1;
+  if (counter < 0) {
+    counter = slides.length - 1;
+  }
+
+  slides[counter].classList.add('slider-item-shown');
+  sliderTabButtons[counter].classList.add('slider-button-current');
+});
+
+buttonNext.addEventListener('click', () => {
+  clearClasses();
+  counter = counter + 1;
+  if (counter > slides.length - 1) {
+    counter = 0;
+  }
+  slides[counter].classList.add('slider-item-shown');
+  sliderTabButtons[counter].classList.add('slider-button-current');
 });
