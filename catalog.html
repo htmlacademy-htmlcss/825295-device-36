@@ -20,7 +20,6 @@
 
   <body>
     <header class="page-header">
-      <span class="visually-hidden">Переход на главную страницу.</span>
       <a class="device-logo-link" href="index.html">
         <img class="device-logo" src="images/header/device-logo.svg" width="145" height="36" alt="Логотип Девайс.">
       </a>
@@ -53,8 +52,9 @@
                       alt="Любительская селфи-палка.">
                     Любительская<br> селфи-палка
                   </a>
-                  <span class="visually-hidden">Удалить из корзины.</span>
-                  <button class="popover-button-delete popover-button-delete-first" type="button"></button>
+                  <button class="popover-button-delete popover-button-delete-first" type="button">
+                    <span class="visually-hidden">Удалить из корзины.</span>
+                  </button>
                 </li>
                 <li class="popover-item">
                   <a class="popover-item-link" href="#">
@@ -63,8 +63,9 @@
                     Профессиональная<br>
                     селфи-палка
                   </a>
-                  <span class="visually-hidden">Удалить из корзины.</span>
-                  <button class="popover-button-delete" type="button"></button>
+                  <button class="popover-button-delete" type="button">
+                    <span class="visually-hidden">Удалить из корзины.</span>
+                  </button>
                 </li>
               </ul>
               <div class="popover-goods-wrapper">
@@ -80,8 +81,7 @@
             Каталог товаров
           </button>
           <div class="goods-sublist-container">
-            <span class="visually-hidden">Список товаров.</span>
-            <ul class="goods-sublist">
+            <ul class="goods-sublist" aria-label="Список товаров.">
               <li class="goods-sublist-item">
                 <a class="goods-sublist-link" href="#">Виртуальная
                   реальность</a>
@@ -141,8 +141,8 @@
                 <legend class="price-heading">Стоимость</legend>
                 <div class="range-scale">
                   <div class="range-scale-wrapper range-scale-wrapper-from">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
                     <button class="range-button range-button-first" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
                     <label>
                       <span class="visually-hidden">от 0.</span>
@@ -150,8 +150,8 @@
                     </label>
                   </div>
                   <div class="range-scale-wrapper range-scale-wrapper-to">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
                     <button class="range-button range-button-second" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                     <label>
                       <span class="visually-hidden">до 5000.</span>
@@ -232,15 +232,15 @@
                 <option class="sorting-option">Дорогие</option>
               </select>
               <div class="sorting-buttons-container">
-                <span class="visually-hidden">Отсортировать по возрастанию.</span>
                 <a class="sorting-button sorting-button-up" href="#">
+                  <span class="visually-hidden">Отсортировать по возрастанию.</span>
                   <svg class="sorting-button-icon sorting-button-up-icon" width="12" height="10" viewBox="0 0 12 10"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m6 0 5.5 10H.5" fill="#000" />
                   </svg>
                 </a>
-                <span class="visually-hidden">Отсортировать по убыванию.</span>
                 <a class="sorting-button sorting-button-down" href="#">
+                  <span class="visually-hidden">Отсортировать по убыванию.</span>
                   <svg class="sorting-button-icon sorting-button-down-icon" width="12" height="10" viewBox="0 0 12 10"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 10 .5 0h11" fill="#000" />
@@ -329,7 +329,6 @@
       <div class="footer-container">
         <h2 class="visually-hidden">Свяжитесь с нами.</h2>
         <div class="footer-adress-container">
-          <span class="visually-hidden">Перейти на главную страницу.</span>
           <a class="device-footer-link" href="index.html">
             <img class="device-logo" src="images/footer/device-logo.svg" width="145" height="36" alt="Логотип Девайс.">
           </a>
@@ -355,8 +354,8 @@
           </ul>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <span class="visually-hidden">Девайс в телеграмме.</span>
               <a class="footer-social-link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Девайс в телеграмме.</span>
                 <svg class="footer-social-icon" width="14" height="12" viewBox="0 0 14 12" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -366,8 +365,8 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <span class="visually-hidden">Девайс в ютубе.</span>
               <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Девайс в ютубе.</span>
                 <svg class="footer-social-icon" width="16" height="11" viewBox="0 0 16 11" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -377,8 +376,8 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <span class="visually-hidden">Девайс в твиттере.</span>
               <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Девайс в твиттере.</span>
                 <svg class="footer-social-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -391,7 +390,6 @@
         </div>
         <div class="footer-logo-container">
           <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <span class="visually-hidden">Перейти на сайт HTML Academy.</span>
           <a class="academy-logo-link" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Логотип HTML Academy.</span>
             <svg class="academy-logo-icon" width="115" height="33" viewBox="0 0 115 33" role="img"
